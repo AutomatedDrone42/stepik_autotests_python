@@ -1,4 +1,4 @@
-# Импортировать unittest в файл:
+"""# Импортировать unittest в файл:
 import time
 import unittest
 
@@ -53,14 +53,14 @@ class TestAbs(unittest.TestCase):
 
     if __name__ == "__main__":
         # Заменить строку запуска программы на unittest.main()
-        unittest.main()
+        unittest.main()"""
 
-""" 
-Код белых людей(если не заострять внимание на плейсхолдерах)))))0):
+# Код белых людей(если не заострять внимание на плейсхолдерах)))))0):
 
 from selenium import webdriver
 import time
 import unittest
+
 
 def link_t(link):
     browser = webdriver.Chrome()
@@ -80,10 +80,10 @@ class TestReg(unittest.TestCase):
         self.assertEqual(link_t("http://suninjuly.github.io/registration1.html"),
                          "Поздравляем! Вы успешно зарегистировались!", "registration is failed")
 
-
     def test_reg2(self):
         self.assertEqual(link_t("http://suninjuly.github.io/registration2.html"),
                          "Поздравляем! Вы успешно зарегистировались!", "registration is failed")
 
+
 if __name__ == "__main__":
-    unittest.main()"""
+    unittest.main()
